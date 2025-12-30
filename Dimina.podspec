@@ -1,16 +1,16 @@
 Pod::Spec.new do |s|
   s.name             = 'Dimina'
-  s.version          = '1.1.3'
+  s.version          = '1.1.4'
   s.summary          = 'DiDi Mini Program Framework'
   
   s.description      = <<-DESC
                       DiDi Mini Program Framework for iOS platform.
                       DESC
                       
-  s.homepage         = 'https://github.com/didi/dimina'
+  s.homepage         = 'https://github.com/cyberhan/dimina'
   s.license          = { :type => 'Apache-2.0', :file => 'LICENSE' }
   s.author           = { 'Lehem' => 'lehemyang@gmail.com' }
-  s.source           = { :git => 'https://github.com/didi/dimina.git', :tag => "v#{s.version}" }
+  s.source           = { :git => 'https://github.com/cyberhan/dimina.git', :tag => "v#{s.version}" }
   
   s.ios.deployment_target = '14.0'
   s.swift_version = '5.0'
