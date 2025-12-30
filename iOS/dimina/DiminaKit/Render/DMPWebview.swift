@@ -69,6 +69,7 @@ public class DMPWebview: NSObject, WKNavigationDelegate, WKScriptMessageHandler,
     public let createdAt: Date = Date()
     
     // Add default configuration method
+    @MainActor
     private static func defaultConfiguration(appId: String, processPool: WKProcessPool? = nil) -> WKWebViewConfiguration {
         let config = WKWebViewConfiguration()
         
@@ -94,6 +95,7 @@ public class DMPWebview: NSObject, WKNavigationDelegate, WKScriptMessageHandler,
     }
 
     // Modify constructor
+    @MainActor
     public init(delegate: DMPWebViewDelegate?, appName: String, appId: String, processPool: WKProcessPool? = nil) {
         let config = DMPWebview.defaultConfiguration(appId: appId, processPool: processPool)
 
